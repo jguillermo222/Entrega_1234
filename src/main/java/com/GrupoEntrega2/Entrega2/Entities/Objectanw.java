@@ -1,6 +1,5 @@
-package com.GrupoEntrega2.Entrega2.repositorio;
+package com.GrupoEntrega2.Entrega2.Entities;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 

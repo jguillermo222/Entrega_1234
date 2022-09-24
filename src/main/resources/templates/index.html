@@ -1,53 +1,68 @@
 <!doctype html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<html lang="en" xmlns:th="https://www.thymeleaf.org/" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Interfase Fruteria el portal</title>
 </head>
 <body>
 <section class = "principal1">
 
-<div class="container">
+<div class="container111">
     <img src ="/imagenes/frutas1.png"/>
-    <h1 class = "titulogrande">Fruteria doña Angela</h1>
+    <h1 class = "titulogrande">Fruteria el Portal</h1>
     <h3 class = "tpequeño">
 
-        Acceso a la informacion de la pagina de la empresa
+        Acceso a la información de la página de la empresa.
     </h3>
 
 
-    <div class="container" >
-        <div class="center">
-            <button class="btn">
-                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+    <div class="container111" >
+        <div class="center111">
+            <div sec:authorize="!isAuthenticated()">
+            <a th:href="@{/oauth2/authorization/auth0}"/>
+            </div>
+            <div sec:authorize="isAuthenticated()">
+                <a href="/pagina3"/>
+            </div>
+            <button class="btn111">
+                <svg width="240px" height="60px" viewBox="0 0 180 60" class="border">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line111" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line111" />
                 </svg>
                 <span>Ingresar a la plataforma</span>
             </button>
+            </a>
         </div>
     </div>
-
-    <div class="container">
-        <div class="center">
-            <button class="btn">
-                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
-                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+    <div class="container111" >
+        <div class="center111">
+            <a href="/pagina2">
+            <button class="btn111">
+                <svg width="240px" height="60px" viewBox="0 0 180 60" class="border">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line111" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line111" />
                 </svg>
-                <span>Usuario nuevo</span>
+
+                <span>Sobre nosotros</span>
             </button>
+            </a>
         </div>
     </div>
-    </div>
-
+</div>
 
 </section>
 
-<a href="/pagina2">Ir a la pagina 2</a>
+<div sec:authorize="isAuthenticated()">
+<h4> USUARIO CON ACCESO A LA PLATAFORMA</h4>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 background-color: blue;
 }
 
-.container {
+.container111 {
   max-width: 1140px;
   margin-right: auto;
   margin-left: auto;
@@ -38,7 +38,7 @@ font-weight: normal;
 
 
 
-.btn {
+.btn111 {
   width: 180px;
   height: 60px;
   cursor: pointer;
@@ -59,16 +59,16 @@ svg {
   transition: 1s ease-in-out;
 }
 
-.btn:hover {
+.btn111:hover {
   transition: 1s ease-in-out;
   background: #0f423f;
 }
 
-.btn:hover svg {
+.btn111:hover svg {
   stroke-dashoffset: -480;
 }
 
-.btn span {
+.btn111 span {
   color: white;
   font-size: 18px;
   font-weight: 100;
@@ -76,6 +76,10 @@ svg {
 
 
 
-div button{
+.div button{
     display:inline-block;
+}
+
+::after, ::before{
+box-sizing: border-box;
 }

@@ -4,8 +4,7 @@ package com.GrupoEntrega2.Entrega2.Services;
 import com.GrupoEntrega2.Entrega2.Repository.RepositoryPerfilDeEmpleado;
 
 
-import com.GrupoEntrega2.Entrega2.repositorio.Empresa;
-import com.GrupoEntrega2.Entrega2.repositorio.PerfilDeEmpleado;
+import com.GrupoEntrega2.Entrega2.Entities.PerfilDeEmpleado;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

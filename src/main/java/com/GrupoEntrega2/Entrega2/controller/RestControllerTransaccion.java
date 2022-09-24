@@ -4,8 +4,8 @@ package com.GrupoEntrega2.Entrega2.controller;
 import com.GrupoEntrega2.Entrega2.Services.ServiceInterfaceTransaccion;
 
 
-import com.GrupoEntrega2.Entrega2.repositorio.Objectanw;
-import com.GrupoEntrega2.Entrega2.repositorio.Transaccion;
+import com.GrupoEntrega2.Entrega2.Entities.Objectanw;
+import com.GrupoEntrega2.Entrega2.Entities.Transaccion;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

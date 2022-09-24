@@ -1,7 +1,7 @@
 package com.GrupoEntrega2.Entrega2.Services;
 
 
-import com.GrupoEntrega2.Entrega2.repositorio.Transaccion;
+import com.GrupoEntrega2.Entrega2.Entities.Transaccion;
 
 import java.util.List;
 

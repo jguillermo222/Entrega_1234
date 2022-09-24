@@ -4,7 +4,7 @@ package com.GrupoEntrega2.Entrega2.Services;
 
 import com.GrupoEntrega2.Entrega2.Repository.ReposityTransaction;
 
-import com.GrupoEntrega2.Entrega2.repositorio.Transaccion;
+import com.GrupoEntrega2.Entrega2.Entities.Transaccion;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

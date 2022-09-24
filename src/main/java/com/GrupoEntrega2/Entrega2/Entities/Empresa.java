@@ -1,4 +1,4 @@
-package com.GrupoEntrega2.Entrega2.repositorio;
+package com.GrupoEntrega2.Entrega2.Entities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;

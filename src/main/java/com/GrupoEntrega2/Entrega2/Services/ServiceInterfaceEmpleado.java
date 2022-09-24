@@ -1,6 +1,6 @@
 package com.GrupoEntrega2.Entrega2.Services;
 
-import com.GrupoEntrega2.Entrega2.repositorio.Empleado;
+import com.GrupoEntrega2.Entrega2.Entities.Empleado;
 
 import java.util.List;
 

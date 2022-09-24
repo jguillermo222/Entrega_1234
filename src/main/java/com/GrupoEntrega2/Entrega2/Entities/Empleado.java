@@ -1,4 +1,4 @@
-package com.GrupoEntrega2.Entrega2.repositorio;
+package com.GrupoEntrega2.Entrega2.Entities;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
@@ -49,7 +49,7 @@ public class Empleado {
     @Column(name="fechaDeActualizacion")
     private Date fechaDeActualizacion;
 
-    public Empleado(String email, com.GrupoEntrega2.Entrega2.repositorio.PerfilDeEmpleado perfilDeEmpleado, List<Enum_rol> rol, Empresa empresa) {
+    public Empleado(String email, com.GrupoEntrega2.Entrega2.Entities.PerfilDeEmpleado perfilDeEmpleado, List<Enum_rol> rol, Empresa empresa) {
         this.email = email;
         PerfilDeEmpleado = perfilDeEmpleado;
         this.rol = rol;
@@ -57,7 +57,7 @@ public class Empleado {
     }
 
 
-    public Empleado(long idEmpleado, String email, com.GrupoEntrega2.Entrega2.repositorio.PerfilDeEmpleado perfilDeEmpleado, List<Enum_rol> rol, Empresa empresa, List<Transaccion> transacciones, Date fechaDeCreacion, Date fechaDeActualizacion) {
+    public Empleado(long idEmpleado, String email, com.GrupoEntrega2.Entrega2.Entities.PerfilDeEmpleado perfilDeEmpleado, List<Enum_rol> rol, Empresa empresa, List<Transaccion> transacciones, Date fechaDeCreacion, Date fechaDeActualizacion) {
         this.idEmpleado = idEmpleado;
         this.email = email;
         PerfilDeEmpleado = perfilDeEmpleado;
