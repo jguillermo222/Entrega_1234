@@ -28,5 +28,10 @@ public class ControllerFrontEnd {
         return "pagina3";
     }
 
+    @RequestMapping("/paginaEmpresa")
+    public String pag4(){
+
+        return "paginaEmpresa";
+    }
 
 }

@@ -1,33 +1,81 @@
-<!DOCTYPE html >
-<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>App Personas</title>
 </head>
 <body>
+<main>
 
-
-<div class="panel panel-warning">
-    <div class="panel-heading">
-        <h3 class="panel-title">panel title</h3>
+    <div class="container">
+        <div class="card-deck mb-3 text-center">
+            <div class="card mb-4 box-shadow">
+                <div class="card-header">
+                    <h4 class="my-0 font-weight-normal">Tablas de Empresas</h4>
+                </div>
+    <div class="card-body">
+        <h4 class="card-title pricing-card-title"> Main Key = idEmpresa </h4>
+        <ul class="list-unstyled mt-3 mb-4">
+            <li>Tipos de Comandos disponibles</li>
+            <li>Revisar empresas disponibles, revisar por una empresa, crear una empresa, update empresa, y eliminar empresa</li>
+            <li></li>
+            <li></li>
+        </ul>
+        <a href="/paginaEmpresa">
+        <button type="button" class="btn btn-outline-success">Ingresar a BD de Empresa</button>
+        </a>
     </div>
-    <div class="panel-body">
-        ::before
-        panel content
-        ::after
     </div>
-</div>
+    <div class="card mb-4 box-shadow">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Tablas de Empleados </h4>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title pricing-card-title">Main Key = idEmpleados  </h4>
+            <ul class="list-unstyled mt-3 mb-4">
+                <li>Tipos de Comandos disponibles</li>
+                <li>Revisar empleados disponibles, revisar por un empleado, crear un empleado, update empleado, y eliminar empleado</li>
+                <li></li>
+                <li></li>
+            </ul>
+            <a href="/paginaEmpresa">
+            <button type="button" class="btn btn-outline-success">Ingresar a BD de Empleados</button>
+            </a>
+        </div>
+    </div>
+    <div class="card mb-4 box-shadow">
+        <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Tabla Transacciones </h4>
+        </div>
+        <div class="card-body">
+            <h4 class="card-title pricing-card-title">Main Key = idTransaccion </h4>
+            <ul class="list-unstyled mt-3 mb-4">
+                <li>Tipos de Comandos disponibles</li>
+                <li>Revisar transacciones hechas, buscar una transaccion, crear una transaccion, modificar una transaccion, y eliminar transaccion </li>
+                <li></li>
+                <li></li>
+            </ul>
+            <a href="/paginaEmpresa">
+            <button type="button" class="btn btn-outline-success">Ingresar a BD de Transaccion</button>
+            </a>
+        </div>
+    </div>
+    </div>
+    </div>
 
 
 
-<h1>HOLA mundo</h1>
-</div>
+</main>
 
-
-
-
+<a href="/">
+    <h5 align="center"> Volver al menu </h5>
+</a>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
