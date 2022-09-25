@@ -29,9 +29,27 @@ public class ControllerFrontEnd {
     }
 
     @RequestMapping("/paginaEmpresa")
-    public String pag4(){
+    public String pagEmpresa(){
 
         return "paginaEmpresa";
+    }
+
+    @RequestMapping("/paginaEmpleados")
+    public String pagEmpleados(){
+
+        return "paginaEmpleados";
+    }
+
+    @RequestMapping("/paginaTransacciones")
+    public String pagTransacciones(){
+
+        return "paginaTransacciones";
+    }
+
+    @RequestMapping("/pag1")
+    public String pag1(){
+
+        return "pag1";
     }
 
 }
